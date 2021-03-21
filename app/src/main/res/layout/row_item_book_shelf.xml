@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:layout_margin="5dp"
+    android:elevation="0dp">
+
+    <LinearLayout
+        android:id="@+id/image_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/grid_image"
+                android:layout_width="wrap_content"
+                android:layout_height="85dp"
+                android:src="@drawable/ic_list_black_48dp" />
+            <TextView
+                android:id="@+id/grid_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/red"
+                android:padding="2dp"
+                android:layout_alignLeft="@+id/grid_image"
+                android:text="For Sell"
+                android:textColor="@color/white"
+                android:textSize="11dp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/grid_bookName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_below="@+id/grid_image"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:text="Title"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="13dp" />
+        <TextView
+            android:id="@+id/grid_bookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/grid_bookName"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:text="৳ 100.0"
+            android:textColor="@color/black"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

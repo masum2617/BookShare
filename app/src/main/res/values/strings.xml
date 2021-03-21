@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Book Share</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_myshelf">My Shelf</string>
+    <string name="title_mycart">My Cart</string>
+    <string name="title_users">Nearby Users</string>
+    <string name="title_messages">Messages</string>
+    <string name="url">https://app.al-hilaal.net/bookshare/api/</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Google Map API key -->
+    <string name="google_map_api_key">AIzaSyAFXIbRKOtsGvsbnjcJjlqgeAAWSbAvrBE</string>
+</resources>
