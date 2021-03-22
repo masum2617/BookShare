@@ -57,13 +57,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
 
         //async map
         supportMapFragment.getMapAsync(this);
-        userList.add(new User(23.747925,90.418767,"Samir Mahmud",7, 3,4));
+        userList.add(new User(23.747925,90.418767,"Rakib Hasan",7, 3,4));
         userList.add(new User(23.741297,90.410976,"Akbar Ali",3, 2,1));
         userList.add(new User(23.740855,90.419656,"Rudra Sen",0,0,0));
         userList.add(new User(23.743478,90.417488,"Shishir Kusum",5,3,2));
         userList.add(new User(23.7447318,90.4097382,"Rezaul Karim",2,1,1));
-        userList.add(new User(23.742840,90.414023,"Moyeen Ahmed",4,3,1));
-        userList.add(new User(23.737231,90.415375,"Abdur Rahman",6,4,2));
+        userList.add(new User(23.7345727,90.414023,"Moyeen Ahmed",4,3,1));
+        userList.add(new User(23.732421,90.415375,"Abdur Rahman",6,4,2));
 
 
         detailLayout = (LinearLayout) root.findViewById(R.id.detailLayout);
@@ -102,7 +102,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         LatLng myLocation = new LatLng(23.7433969,90.4151673);
 
         //showing some locations on map
-
+        //from user list
         for(User u : userList){
             Marker marker = gMap.addMarker(
                     new MarkerOptions()
@@ -110,14 +110,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                             .title(u.title)
                             .snippet("Books: "+u.bookCount)
             );
-            marker.setTag(u);
+            marker.setTag(x);
             marker.showInfoWindow();
         }
 
 
         //zooming the map around my location
         gMap.moveCamera(CameraUpdateFactory.newLatLngZoom(
-                myLocation, 15
+                myLocation, 18
         ));
 
         gMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -146,7 +146,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
                         startActivity(intent);
                     }
                 });
-                //Toast.makeText(getContext(), marker.getTitle(),Toast.LENGTH_LONG).show();
+                
                 return false;
             }
         });
