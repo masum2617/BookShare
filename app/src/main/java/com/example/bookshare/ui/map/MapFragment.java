@@ -44,7 +44,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         mapViewModel =
                 ViewModelProviders.of(this).get(MapViewModel.class);
         View root = inflater.inflate(R.layout.fragment_map, container, false);
-        //final TextView textView = root.findViewById(R.id.text_share);
+
         mapViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
@@ -64,6 +64,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback {
         userList.add(new User(23.7447318,90.4097382,"Rezaul Karim",2,1,1));
         userList.add(new User(23.7345727,90.414023,"Moyeen Ahmed",4,3,1));
         userList.add(new User(23.732421,90.415375,"Abdur Rahman",6,4,2));
+        userList.add(new User(24,891245,90.365789,"Farhana Iffat",8,2,1 ));
 
 
         detailLayout = (LinearLayout) root.findViewById(R.id.detailLayout);
