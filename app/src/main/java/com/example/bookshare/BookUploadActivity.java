@@ -21,8 +21,8 @@ import android.widget.Spinner;
 public class BookUploadActivity extends AppCompatActivity {
 
     private String[] categories = {
-            "Academic", "Literature", "Novel", "Story & Poem",
-            "Islamic", "Business", "Historical"
+            "ACADEMIC", "LITERATURE", "NOVEL", "STORY & POEMm",
+            "ISLAMIC", "BUSINESS", "HISTORCAL"
     };
     private Spinner spCat;
     private ArrayAdapter<String> adapterCat;
