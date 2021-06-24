@@ -44,9 +44,9 @@ public class CategoryActivity extends AppCompatActivity {
     private ProgressBar pbCategoryBookList;
     private ListView categoryBookList;
     private String[] bookNames = {
-            "Book - 1", "Book - 2", "Book - 3", "Book - 4",
-            "Book - 5", "Book - 6", "Book - 7", "Book - 8",
-            "Book - 9", "Book - 10", "Book - 11", "Book - 12"
+            "BOOK - 1", "BOOK - 2", "BOOK - 3", "BOOK - 4",
+            "BOOK - 5", "BOOK - 6", "BOOK - 7", "BOOK - 8",
+            "BOOK - 9", "BOOK - 10", "BOOK - 11", "BOOK - 12"
     };
     private List<Book> bookList = new ArrayList<Book>();
 
@@ -170,7 +170,7 @@ public class CategoryActivity extends AppCompatActivity {
                         }
                     });
                 }else{
-                    foundMsg.setText("এই বিষয়ের কোনো কিতাব পাওয়া যাই নাই!");
+                    foundMsg.setText("No book found for the following subject");
                     foundMsg.setVisibility(View.VISIBLE);
                 }
 
