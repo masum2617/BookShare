@@ -131,7 +131,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "You're successfully logged in!", Toast.LENGTH_LONG).show();
             finish();
         }else {
-            Toast.makeText(getApplicationContext(), "Username or edPassword is incorrect", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Username or Password is incorrect", Toast.LENGTH_LONG).show();
         }
     }
 
